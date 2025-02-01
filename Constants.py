@@ -1,0 +1,5 @@
+FLOOR = 0
+WARP_BORDER = 1
+BORDER = 2
+
+ROW,COL = 56, 32
