@@ -6,8 +6,11 @@ from Room import Room
 
 
 floor = Floor(Constants.ROW,Constants.COL)
-floor.borders()
 floor.generateRooms()
+
+#floor.borders()
+
+
 
 floor = np.array(floor.arr)
 plt.imshow(floor, interpolation='none')
