@@ -7,11 +7,10 @@ from Room import Room
 
 floor = Floor(Constants.ROW,Constants.COL)
 floor.generateRooms()
-
-#floor.borders()
-
+floor.fill()
 
 
+plt.title([len(floor.rooms)])
 floor = np.array(floor.arr)
 plt.imshow(floor, interpolation='none')
 plt.show()

@@ -7,8 +7,8 @@ class Room:
         self.firstX= random.randint(xS, xS+widthS-1)
         self.firstY = random.randint(yS, yS+heightS-1)
         
-        self.secondX= random.randint(xS+1, xS+widthS)
-        self.secondY = random.randint(yS+1, yS+heightS)
+        self.secondX= random.randint(self.firstX+1, xS+widthS)
+        self.secondY = random.randint(self.firstY+1, yS+heightS)
 
         self.width = self.secondX - self.firstX
         self.height = self.secondY - self.firstY
